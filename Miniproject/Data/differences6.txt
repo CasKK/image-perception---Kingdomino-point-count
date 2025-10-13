@@ -1,0 +1,8 @@
+0787 | planes, 30, 7, 1                    | planes, 30, 7, 2
+0805 | Total points for image 30 = 59      | Total points for image 30 = 67
+1472 | rocks, 56, 16, 0                    | rocks, 56, 16, 1
+1481 | Total points for image 56 = 62      | Total points for image 56 = 64
+1823 | forest, 70, 3, 0                    | forest, 70, 3, 1
+1845 | Total points for image 70 = 52      | Total points for image 70 = 66
+1873 | desert, 72, 1, 1                    | desert, 72, 1, 0
+1897 | Total points for image 72 = 129     | Total points for image 72 = 124

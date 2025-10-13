@@ -1,0 +1,56 @@
+0116 | cave, 4, 12, 0                      | start, 4, 12, 0
+0133 | forest, 5, 3, 2                     | cave, 5, 3, 2
+0137 | planes, 5, 7, 0                     | desert, 5, 7, 0
+0142 | cave, 5, 12, 0                      | start, 5, 12, 0
+0155 | Total points for image 5 = 41       | Total points for image 5 = 43
+0168 | cave, 6, 12, 0                      | start, 6, 12, 0
+0235 | forest, 9, 1, 0                     | cave, 9, 1, 0
+0259 | Total points for image 9 = 35       | Total points for image 9 = 38
+0331 | cave, 12, 19, 0                     | start, 12, 19, 0
+0378 | forest, 14, 14, 0                   | start, 14, 14, 0
+0389 | Total points for image 14 = 52      | Total points for image 14 = 49
+0454 | rocks, 17, 12, 0                    | start, 17, 12, 0
+0480 | rocks, 18, 12, 0                    | start, 18, 12, 0
+0532 | cave, 20, 12, 0                     | start, 20, 12, 0
+0558 | forest, 21, 12, 0                   | start, 21, 12, 0
+0571 | Total points for image 21 = 64      | Total points for image 21 = 60
+0584 | cave, 22, 12, 0                     | start, 22, 12, 0
+0645 | cave, 24, 21, 1                     | forest, 24, 21, 1
+0649 | Total points for image 24 = 46      | Total points for image 24 = 44
+0747 | planes, 28, 19, 1                   | forest, 28, 19, 1
+0753 | Total points for image 28 = 40      | Total points for image 28 = 44
+0766 | rocks, 29, 12, 0                    | start, 29, 12, 0
+0787 | planes, 30, 7, 1                    | planes, 30, 7, 2
+0792 | cave, 30, 12, 0                     | start, 30, 12, 0
+0802 | start, 30, 22, 1                    | forest, 30, 22, 1
+0805 | Total points for image 30 = 53      | Total points for image 30 = 67
+0860 | rocks, 33, 2, 0                     | start, 33, 2, 0
+0883 | Total points for image 33 = 40      | Total points for image 33 = 36
+0948 | cave, 36, 12, 0                     | start, 36, 12, 0
+1000 | rocks, 38, 12, 0                    | start, 38, 12, 0
+1035 | table, 39, 21, 0                    | desert, 39, 21, 0
+1037 | forest, 39, 23, 2                   | planes, 39, 23, 2
+1039 | Total points for image 39 = 43      | Total points for image 39 = 51
+1107 | start, 42, 15, 2                    | rocks, 42, 15, 2
+1113 | forest, 42, 21, 2                   | planes, 42, 21, 2
+1117 | Total points for image 42 = 44      | Total points for image 42 = 66
+1154 | rocks, 44, 10, 0                    | start, 44, 10, 0
+1208 | cave, 46, 12, 0                     | start, 46, 12, 0
+1320 | planes, 50, 20, 1                   | forest, 50, 20, 1
+1322 | forest, 50, 22, 2                   | planes, 50, 22, 2
+1324 | table, 50, 24, 0                    | desert, 50, 24, 0
+1325 | Total points for image 50 = 22      | Total points for image 50 = 30
+1359 | forest, 52, 7, 0                    | cave, 52, 7, 0
+1470 | rocks, 56, 14, 0                    | start, 56, 14, 0
+1472 | rocks, 56, 16, 0                    | rocks, 56, 16, 1
+1481 | Total points for image 56 = 62      | Total points for image 56 = 64
+1486 | rocks, 57, 4, 0                     | start, 57, 4, 0
+1590 | cave, 61, 4, 0                      | start, 61, 4, 0
+1640 | cave, 63, 2, 1                      | forest, 63, 2, 1
+1663 | Total points for image 63 = 35      | Total points for image 63 = 66
+1766 | rocks, 67, 24, 0                    | start, 67, 24, 0
+1792 | rocks, 68, 24, 0                    | start, 68, 24, 0
+1844 | rocks, 70, 24, 0                    | start, 70, 24, 0
+1855 | table, 71, 9, 0                     | desert, 71, 9, 0
+1871 | Total points for image 71 = 79      | Total points for image 71 = 80
+1896 | rocks, 72, 24, 0                    | start, 72, 24, 0

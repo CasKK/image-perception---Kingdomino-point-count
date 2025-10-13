@@ -10,11 +10,11 @@ import ast #Til at hive data ind fra fil
 Image_array = []
 template_blue = cv.imread(r"bluetemplate.jpg",0)
 template_red =  cv.imread(r"redtemplate.jpg",0)
+# template_blueRocks = cv.imread(r"bluetemplateRocks.png",0)
+# template_redRocks =  cv.imread(r"redtemplateRocks.png",0)
 #threshold = 0.7
-min_distance = 8
-
+min_distance = 7
 border = 10
-
 
 def equalize_brightness(img):
     ycrcb = cv.cvtColor(img, cv.COLOR_BGR2YCrCb)
@@ -31,12 +31,12 @@ def equalize_brightness(img):
         y = cv.convertScaleAbs(y, alpha=alpha, beta=beta)
     ycrcb = cv.merge([y, cr, cb])
     result = cv.cvtColor(ycrcb, cv.COLOR_YCrCb2BGR)
-    #cv.imshow("Original", img)
-    #cv.waitKey(0)
-    cv.destroyAllWindows() 
-    #cv.imshow("Equalized Brightness", result)
-    #cv.waitKey(0)
-    cv.destroyAllWindows()
+    # cv.imshow("Original", img)
+    # cv.waitKey(0)
+    # cv.destroyAllWindows() 
+    # cv.imshow("Equalized Brightness", result)
+    # cv.waitKey(0)
+    # cv.destroyAllWindows()
     return result
 
 def meanBGR1(img):
@@ -127,31 +127,15 @@ def rotate_template(image, angle):
     # Perform rotation with expanded canvas
     return cv.warpAffine(image, M, (new_w, new_h))
 
-def redchannel_template_matching(img, redtemplate, threshold):
-    res = cv.matchTemplate(img,redtemplate,cv.TM_CCOEFF_NORMED)
+def template_matching(img, template, threshold):
+    res = cv.matchTemplate(img,template,cv.TM_CCOEFF_NORMED)
     loc = np.where(res >= threshold)
     matches = []
     tile_with_rects = cv.cvtColor(img.copy(), cv.COLOR_GRAY2BGR)
     for pt in zip(*loc[::-1]):  # convert to (x, y)
         if all(np.linalg.norm(np.array(pt) - np.array(existing)) > min_distance for existing in matches):
             matches.append(pt)
-        cv.rectangle(tile_with_rects, pt, (pt[0]+redtemplate.shape[1], pt[1]+redtemplate.shape[0]), (100,150,20), 2)
-
-    #if len(matches) < 1:
-        #print("No matches found")
-    #matches = matches[:3]  # Keep only the first 3 matches
-    #print(f"number_of_matches={len(matches)}")
-    return matches, tile_with_rects, res
-
-def bluechannel_template_matching(img, bluetemplate, threshold):
-    res = cv.matchTemplate(img,bluetemplate,cv.TM_CCOEFF_NORMED)
-    loc = np.where(res >= threshold)
-    matches = []
-    tile_with_rects = cv.cvtColor(img.copy(), cv.COLOR_GRAY2BGR)
-    for pt in zip(*loc[::-1]):  # convert to (x, y)
-        if all(np.linalg.norm(np.array(pt) - np.array(existing)) > min_distance for existing in matches):
-            matches.append(pt)
-        cv.rectangle(tile_with_rects, pt, (pt[0]+bluetemplate.shape[1], pt[1]+bluetemplate.shape[0]), (100,150,20), 2)
+        cv.rectangle(tile_with_rects, pt, (pt[0]+template.shape[1], pt[1]+template.shape[0]), (100,150,20), 2)
 
     #if len(matches) < 1:
         #print("No matches found")
@@ -193,39 +177,38 @@ def count_crowns(img, biome, imagenr):
         template = template_red
         threshold = 0.8
         for i in range(4):
-            template = rotate_template(template, -90)
-            matches,matched_tile, res = redchannel_template_matching(red_channel_img, template, threshold)
-            template_matching_diagnose(img, biome, imagenr, matches, matched_tile, res, total_crowns)
-            #cv.imshow("img", matched_tile)
-            #cv.waitKey(0)
+            template = rotate_template(template, 90)
+            matches,matched_tile, res = template_matching(red_channel_img, template, threshold)
+            #template_matching_diagnose(img, biome, imagenr, matches, matched_tile, res, total_crowns)
             if len(matches) >= 1:
                    break
     else:
         blue_channel_img = cv.split(img)[0]
+        if biome == "rocks":
+            threshold = 0.655
+        # elif biome == "forest":
+        #     threshold = 0.68
+        # elif biome == "desert":
+        #     threshold = 0.69
+        else:
+            threshold = 0.68
         template = template_blue
         for i in range(4):
             template = rotate_template(template, 90)
-            threshold = 0.7
-            matches,matched_tile, res = bluechannel_template_matching(blue_channel_img, template, threshold)
+            matches,matched_tile, res = template_matching(blue_channel_img, template, threshold)
             total_crowns += len(matches)
-            template_matching_diagnose(img, biome, imagenr, matches, matched_tile, res, total_crowns)
-            #cv.imshow("img", matched_tile)
-            #cv.waitKey(0)
+            #template_matching_diagnose(img, biome, imagenr, matches, matched_tile, res, total_crowns)
             if len(matches) >= 1:
                    break
-
     #print(f"matches={total_crowns}")
-    
-    
     return len(matches), matched_tile 
 
 def template_matching_diagnose(img, biome, imagenr, matches, matched_tile, res, total_crowns):
-    if(imagenr == 18 or imagenr == 31): # len(matches) > 0
+    if(imagenr == 12 or imagenr == 31): # len(matches) > 0
         print(f"Image {imagenr}, Biome: {biome}, Crowns: {total_crowns}")
         cv.imshow("img", matched_tile)
         cv.imshow("res", res)
         cv.waitKey(0)
-
 
 def detect_shadow_blobs(image_path):
     # Load the image
