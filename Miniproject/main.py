@@ -4,7 +4,6 @@ from collections import deque
 import time
 from multiprocessing import Pool, cpu_count
 import ast #Til at hive data ind fra fil
-from skimage.feature import graycomatrix, graycoprops
 
 
 
