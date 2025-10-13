@@ -10,7 +10,7 @@ import ast #Til at hive data ind fra fil
 Image_array = []
 template_blue = cv.imread(r"bluetemplate.jpg",0)
 template_red =  cv.imread(r"redtemplate.jpg",0)
-threshold = 0.7
+#threshold = 0.7
 min_distance = 8
 
 border = 10
@@ -127,7 +127,7 @@ def rotate_template(image, angle):
     # Perform rotation with expanded canvas
     return cv.warpAffine(image, M, (new_w, new_h))
 
-def redchannel_template_matching(img, redtemplate):
+def redchannel_template_matching(img, redtemplate, threshold):
     res = cv.matchTemplate(img,redtemplate,cv.TM_CCOEFF_NORMED)
     loc = np.where(res >= threshold)
     matches = []
@@ -143,7 +143,7 @@ def redchannel_template_matching(img, redtemplate):
     #print(f"number_of_matches={len(matches)}")
     return matches, tile_with_rects, res
 
-def bluechannel_template_matching(img, bluetemplate):
+def bluechannel_template_matching(img, bluetemplate, threshold):
     res = cv.matchTemplate(img,bluetemplate,cv.TM_CCOEFF_NORMED)
     loc = np.where(res >= threshold)
     matches = []
@@ -155,8 +155,7 @@ def bluechannel_template_matching(img, bluetemplate):
 
     #if len(matches) < 1:
         #print("No matches found")
-    matches = matches[:3]  # Keep only the first 3 matches
-
+    #matches = matches[:3]  # Keep only the first 3 matches
     #print(f"number_of_matches={len(matches)}")
     return matches, tile_with_rects, res
 
@@ -187,16 +186,16 @@ def split_into_tiles(img):
             # cv.destroyAllWindows()
     return tiles
 
-
 def count_crowns(img, biome, imagenr):
     total_crowns = 0
     if biome == "water":
         red_channel_img = cv.split(img)[2]
         template = template_red
+        threshold = 0.8
         for i in range(4):
             template = rotate_template(template, -90)
-            matches,matched_tile, res = redchannel_template_matching(red_channel_img, template)
-            #template_matching_diagnose(img, biome, imagenr, matches, matched_tile, res, total_crowns)
+            matches,matched_tile, res = redchannel_template_matching(red_channel_img, template, threshold)
+            template_matching_diagnose(img, biome, imagenr, matches, matched_tile, res, total_crowns)
             #cv.imshow("img", matched_tile)
             #cv.waitKey(0)
             if len(matches) >= 1:
@@ -206,9 +205,10 @@ def count_crowns(img, biome, imagenr):
         template = template_blue
         for i in range(4):
             template = rotate_template(template, 90)
-            matches,matched_tile, res = bluechannel_template_matching(blue_channel_img, template)
+            threshold = 0.7
+            matches,matched_tile, res = bluechannel_template_matching(blue_channel_img, template, threshold)
             total_crowns += len(matches)
-            #template_matching_diagnose(img, biome, imagenr, matches, matched_tile, res, total_crowns)
+            template_matching_diagnose(img, biome, imagenr, matches, matched_tile, res, total_crowns)
             #cv.imshow("img", matched_tile)
             #cv.waitKey(0)
             if len(matches) >= 1:
