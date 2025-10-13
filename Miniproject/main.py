@@ -11,7 +11,7 @@ Image_array = []
 template_blue = cv.imread(r"bluetemplate.jpg",0)
 template_red =  cv.imread(r"redtemplate.jpg",0)
 threshold = 0.7
-min_distance = 5
+min_distance = 8
 
 
 
@@ -316,7 +316,7 @@ def compare_files1():
 
     # Write results
     if diff_lines:
-        with open(fr"Data\differences2.txt", "w") as f:
+        with open(fr"Data\differences5.txt", "w") as f:
             for line in diff_lines:
                 f.write(line + "\n")
         print("Found", len(diff_lines), "differences. Written to 'differences2.txt'.")

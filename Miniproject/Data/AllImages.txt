@@ -944,7 +944,7 @@ desert, 36, 6, 1
 rocks, 36, 7, 0
 desert, 36, 8, 0
 forest, 36, 9, 0
-water, 36, 10, 2
+water, 36, 10, 1
 desert, 36, 11, 0
 start, 36, 12, 0
 forest, 36, 13, 0
@@ -959,7 +959,7 @@ forest, 36, 21, 0
 desert, 36, 22, 0
 desert, 36, 23, 0
 table, 36, 24, 0
-Total points for image 36 = 24
+Total points for image 36 = 21
 rocks, 37, 0, 0
 rocks, 37, 1, 0
 start, 37, 2, 0
@@ -1248,7 +1248,7 @@ rocks, 47, 24, 0
 Total points for image 47 = 36
 desert, 48, 0, 0
 water, 48, 1, 0
-water, 48, 2, 2
+water, 48, 2, 1
 forest, 48, 3, 0
 forest, 48, 4, 0
 desert, 48, 5, 0
@@ -1271,7 +1271,7 @@ desert, 48, 21, 0
 forest, 48, 22, 1
 forest, 48, 23, 0
 forest, 48, 24, 0
-Total points for image 48 = 28
+Total points for image 48 = 26
 forest, 49, 0, 0
 forest, 49, 1, 0
 forest, 49, 2, 1
