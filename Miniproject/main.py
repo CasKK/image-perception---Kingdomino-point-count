@@ -164,7 +164,7 @@ def count_crowns(img, biome):
             if len(matches) >= 1:
                    break
 
-    print(f"matches={total_crowns}")         
+    #print(f"matches={total_crowns}")         
     #if(len(matches) > 0):
         #cv.imshow("img", matched_tile)
         #cv.waitKey(0)
@@ -200,7 +200,7 @@ def detect_shadow_blobs(image_path):
     result_image = image.copy()
     cv.drawContours(result_image, contours, -1, (0, 255, 0), 2)
 
-    print(f"🕶️ Shadow area: {shadow_pixels} pixels ({shadow_ratio * 100:.2f}% of image)")
+    #print(f"🕶️ Shadow area: {shadow_pixels} pixels ({shadow_ratio * 100:.2f}% of image)")
 
     return shadow_pixels
 
@@ -254,8 +254,8 @@ time_start = time.time()
 training_data = []
 with open(fr"Data/TrainingDataAllTiles_Type_Img_BGR_Canny_Shadow.txt") as f:
     for i, line in enumerate(f):
-        if i >= 1175:
-            break
+        #if i >= 1175:
+        #    break
         line = line.strip()
         if line:
             tile_type, _, _, values = ast.literal_eval(line)
@@ -267,7 +267,7 @@ for i in range(74):
     img = cv.imread(filename)
     Image_array.append(img)
     #detect_shadow_blobs(img)
-    print(f"{i} image done")
+    #print(f"{i} image done")
 
 with open("Data/AllImages.txt", "w") as f:
     f.write("")
@@ -319,7 +319,7 @@ def compare_files1():
         with open(fr"Data\differences2.txt", "w") as f:
             for line in diff_lines:
                 f.write(line + "\n")
-        print("Found", len(diff_lines), "differences. Written to 'differences12.txt'.")
+        print("Found", len(diff_lines), "differences. Written to 'differences2.txt'.")
     else:
         print("No differences found!")
 
