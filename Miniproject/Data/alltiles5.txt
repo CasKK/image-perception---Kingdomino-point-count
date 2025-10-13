@@ -1,0 +1,301 @@
+Image 1, Score: 39, Tiles: [('planes', 0) ('water', 0) ('forest', 0) ('forest', 0) ('forest', 0)
+ ('planes', 0) ('forest', 0) ('forest', 0) ('forest', 1) ('planes', 0)
+ ('planes', 0) ('rocks', 1) ('rocks', 0) ('forest', 0) ('planes', 0)
+ ('planes', 0) ('rocks', 2) ('water', 0) ('planes', 2) ('planes', 1)
+ ('forest', 0) ('water', 1) ('water', 0) ('planes', 1) ('desert', 0)]
+Image 2, Score: 44, Tiles: [('desert', 0) ('rocks', 0) ('desert', 0) ('cave', 2) ('rocks', 0)
+ ('cave', 1) ('rocks', 1) ('desert', 0) ('desert', 0) ('forest', 0)
+ ('cave', 2) ('rocks', 0) ('rocks', 0) ('desert', 0) ('desert', 0)
+ ('cave', 2) ('cave', 3) ('planes', 0) ('planes', 0) ('desert', 1)
+ ('desert', 0) ('desert', 0) ('rocks', 0) ('rocks', 0) ('planes', 0)]
+Image 3, Score: 52, Tiles: [('rocks', 2) ('desert', 1) ('forest', 0) ('forest', 0) ('forest', 0)
+ ('desert', 0) ('desert', 0) ('forest', 1) ('forest', 0) ('forest', 0)
+ ('cave', 0) ('desert', 1) ('planes', 0) ('forest', 0) ('water', 1)
+ ('desert', 0) ('forest', 1) ('forest', 0) ('forest', 1) ('water', 0)
+ ('water', 0) ('water', 0) ('water', 1) ('forest', 0) ('water', 1)]
+Image 4, Score: 42, Tiles: [('water', 1) ('desert', 0) ('desert', 1) ('rocks', 0) ('desert', 0)
+ ('water', 0) ('desert', 1) ('planes', 2) ('planes', 0) ('desert', 0)
+ ('water', 0) ('desert', 0) ('desert', 0) ('desert', 0) ('desert', 0)
+ ('water', 1) ('desert', 0) ('desert', 0) ('forest', 1) ('forest', 1)
+ ('water', 0) ('water', 0) ('some_shit', 0) ('water', 0) ('water', 0)]
+Image 5, Score: 34, Tiles: [('planes', 0) ('water', 0) ('forest', 0) ('forest', 0) ('forest', 0)
+ ('planes', 0) ('forest', 0) ('forest', 0) ('forest', 1) ('planes', 0)
+ ('planes', 0) ('rocks', 0) ('cave', 0) ('forest', 0) ('planes', 0)
+ ('planes', 0) ('rocks', 2) ('water', 0) ('planes', 2) ('planes', 1)
+ ('forest', 0) ('water', 1) ('water', 0) ('planes', 1) ('desert', 0)]
+Image 6, Score: 42, Tiles: [('desert', 0) ('rocks', 0) ('desert', 0) ('cave', 2) ('rocks', 0)
+ ('cave', 1) ('rocks', 1) ('rocks', 0) ('desert', 0) ('forest', 0)
+ ('cave', 2) ('rocks', 0) ('cave', 0) ('desert', 0) ('desert', 0)
+ ('cave', 2) ('cave', 3) ('planes', 0) ('planes', 0) ('desert', 1)
+ ('desert', 0) ('desert', 0) ('rocks', 0) ('rocks', 0) ('planes', 0)]
+Image 7, Score: 43, Tiles: [('rocks', 2) ('desert', 1) ('forest', 0) ('forest', 0) ('forest', 0)
+ ('desert', 0) ('desert', 0) ('forest', 0) ('forest', 0) ('forest', 0)
+ ('cave', 0) ('desert', 1) ('forest', 0) ('forest', 0) ('water', 1)
+ ('desert', 0) ('forest', 1) ('forest', 0) ('forest', 1) ('water', 0)
+ ('water', 0) ('water', 0) ('water', 1) ('forest', 0) ('water', 1)]
+Image 8, Score: 42, Tiles: [('water', 1) ('desert', 0) ('desert', 1) ('rocks', 0) ('desert', 0)
+ ('water', 0) ('desert', 1) ('planes', 2) ('planes', 0) ('desert', 0)
+ ('water', 0) ('desert', 0) ('desert', 0) ('desert', 0) ('desert', 0)
+ ('water', 1) ('desert', 0) ('desert', 0) ('forest', 1) ('forest', 1)
+ ('water', 0) ('water', 0) ('some_shit', 0) ('water', 0) ('water', 0)]
+Image 9, Score: 42, Tiles: [('table', 0) ('cave', 2) ('desert', 0) ('desert', 1) ('planes', 0)
+ ('desert', 0) ('planes', 1) ('water', 0) ('desert', 1) ('forest', 1)
+ ('table', 0) ('planes', 0) ('planes', 2) ('desert', 0) ('desert', 0)
+ ('desert', 0) ('rocks', 1) ('desert', 0) ('desert', 0) ('rocks', 0)
+ ('rocks', 0) ('rocks', 0) ('desert', 1) ('desert', 0) ('water', 0)]
+Image 10, Score: 40, Tiles: [('desert', 1) ('cave', 0) ('cave', 2) ('cave', 2) ('table', 0)
+ ('water', 0) ('forest', 1) ('rocks', 0) ('rocks', 0) ('table', 0)
+ ('water', 0) ('water', 0) ('rocks', 0) ('rocks', 2) ('desert', 0)
+ ('water', 0) ('water', 1) ('forest', 0) ('desert', 0) ('desert', 0)
+ ('water', 0) ('water', 1) ('forest', 0) ('forest', 1) ('forest', 0)]
+Image 11, Score: 49, Tiles: [('forest', 0) ('forest', 1) ('forest', 0) ('forest', 0) ('forest', 0)
+ ('water', 1) ('desert', 0) ('desert', 1) ('forest', 0) ('forest', 0)
+ ('water', 1) ('desert', 0) ('desert', 0) ('forest', 1) ('rocks', 0)
+ ('water', 0) ('planes', 1) ('planes', 0) ('forest', 1) ('forest', 0)
+ ('table', 0) ('table', 0) ('planes', 0) ('forest', 0) ('forest', 0)]
+Image 12, Score: 24, Tiles: [('desert', 0) ('desert', 0) ('planes', 0) ('planes', 0) ('table', 0)
+ ('forest', 0) ('water', 1) ('water', 0) ('water', 0) ('table', 0)
+ ('planes', 0) ('planes', 0) ('planes', 2) ('forest', 0) ('water', 0)
+ ('planes', 0) ('rocks', 2) ('planes', 0) ('desert', 0) ('water', 0)
+ ('rocks', 0) ('rocks', 0) ('rocks', 0) ('desert', 0) ('water', 1)]
+Image 13, Score: 39, Tiles: [('rocks', 0) ('cave', 2) ('desert', 0) ('desert', 1) ('planes', 0)
+ ('desert', 0) ('planes', 1) ('water', 0) ('desert', 1) ('forest', 1)
+ ('table', 0) ('planes', 0) ('planes', 2) ('desert', 0) ('desert', 0)
+ ('desert', 0) ('rocks', 0) ('desert', 0) ('desert', 0) ('cave', 0)
+ ('rocks', 0) ('rocks', 0) ('desert', 1) ('desert', 0) ('water', 0)]
+Image 14, Score: 37, Tiles: [('desert', 0) ('cave', 0) ('cave', 2) ('cave', 2) ('table', 0)
+ ('water', 0) ('forest', 1) ('rocks', 0) ('rocks', 0) ('table', 0)
+ ('water', 0) ('water', 0) ('some_shit', 0) ('rocks', 2) ('desert', 0)
+ ('water', 0) ('water', 1) ('forest', 0) ('desert', 0) ('desert', 0)
+ ('water', 0) ('water', 1) ('forest', 0) ('forest', 1) ('forest', 0)]
+Image 15, Score: 49, Tiles: [('forest', 0) ('forest', 1) ('forest', 0) ('forest', 0) ('forest', 0)
+ ('water', 1) ('desert', 0) ('desert', 1) ('forest', 0) ('forest', 0)
+ ('water', 1) ('desert', 0) ('desert', 0) ('forest', 1) ('cave', 0)
+ ('water', 0) ('planes', 1) ('planes', 0) ('forest', 1) ('forest', 0)
+ ('table', 0) ('table', 0) ('planes', 0) ('forest', 0) ('forest', 0)]
+Image 16, Score: 24, Tiles: [('desert', 0) ('desert', 0) ('planes', 0) ('planes', 0) ('table', 0)
+ ('forest', 0) ('water', 1) ('water', 0) ('water', 0) ('table', 0)
+ ('planes', 0) ('planes', 0) ('planes', 2) ('forest', 0) ('water', 0)
+ ('planes', 0) ('rocks', 2) ('planes', 0) ('desert', 0) ('water', 0)
+ ('rocks', 0) ('rocks', 0) ('rocks', 0) ('desert', 0) ('water', 1)]
+Image 17, Score: 42, Tiles: [('rocks', 0) ('planes', 0) ('rocks', 2) ('desert', 0) ('forest', 0)
+ ('rocks', 0) ('planes', 0) ('rocks', 0) ('desert', 0) ('forest', 0)
+ ('rocks', 2) ('planes', 0) ('rocks', 0) ('desert', 0) ('forest', 1)
+ ('rocks', 1) ('planes', 1) ('water', 0) ('water', 1) ('forest', 0)
+ ('desert', 0) ('planes', 2) ('water', 0) ('water', 0) ('water', 0)]
+Image 18, Score: 60, Tiles: [('planes', 0) ('forest', 1) ('desert', 0) ('desert', 0) ('water', 0)
+ ('table', 0) ('forest', 0) ('forest', 1) ('desert', 0) ('desert', 1)
+ ('table', 0) ('forest', 0) ('planes', 0) ('desert', 1) ('desert', 0)
+ ('forest', 0) ('forest', 1) ('forest', 0) ('forest', 0) ('forest', 1)
+ ('water', 0) ('water', 0) ('forest', 0) ('forest', 0) ('forest', 0)]
+Image 19, Score: 23, Tiles: [('desert', 1) ('planes', 0) ('forest', 0) ('planes', 0) ('water', 0)
+ ('desert', 0) ('planes', 0) ('planes', 0) ('planes', 0) ('desert', 0)
+ ('cave', 2) ('rocks', 0) ('rocks', 0) ('forest', 0) ('desert', 0)
+ ('cave', 0) ('cave', 3) ('desert', 0) ('forest', 0) ('rocks', 0)
+ ('desert', 0) ('desert', 0) ('desert', 0) ('desert', 0) ('desert', 1)]
+Image 20, Score: 53, Tiles: [('water', 1) ('water', 0) ('water', 0) ('water', 0) ('water', 0)
+ ('forest', 0) ('rocks', 1) ('planes', 0) ('forest', 0) ('water', 1)
+ ('cave', 2) ('rocks', 0) ('rocks', 0) ('forest', 0) ('water', 1)
+ ('cave', 1) ('cave', 0) ('planes', 0) ('planes', 2) ('water', 1)
+ ('desert', 0) ('desert', 1) ('desert', 0) ('desert', 0) ('desert', 0)]
+Image 21, Score: 40, Tiles: [('rocks', 0) ('planes', 0) ('rocks', 2) ('desert', 0) ('forest', 0)
+ ('rocks', 0) ('planes', 0) ('rocks', 0) ('desert', 0) ('forest', 0)
+ ('rocks', 2) ('planes', 0) ('forest', 0) ('desert', 0) ('forest', 1)
+ ('rocks', 1) ('planes', 1) ('water', 0) ('water', 1) ('forest', 0)
+ ('desert', 0) ('planes', 2) ('water', 0) ('water', 0) ('water', 0)]
+Image 22, Score: 64, Tiles: [('planes', 0) ('forest', 1) ('desert', 0) ('desert', 0) ('water', 0)
+ ('table', 0) ('forest', 0) ('forest', 1) ('desert', 0) ('desert', 1)
+ ('table', 0) ('forest', 0) ('forest', 0) ('desert', 1) ('desert', 0)
+ ('forest', 0) ('forest', 1) ('forest', 0) ('forest', 0) ('forest', 1)
+ ('water', 0) ('water', 0) ('forest', 0) ('forest', 0) ('forest', 0)]
+Image 23, Score: 36, Tiles: [('desert', 1) ('planes', 0) ('forest', 0) ('planes', 0) ('water', 0)
+ ('desert', 0) ('planes', 1) ('planes', 0) ('planes', 0) ('desert', 0)
+ ('cave', 2) ('rocks', 0) ('cave', 0) ('forest', 0) ('desert', 0)
+ ('cave', 2) ('cave', 3) ('desert', 0) ('forest', 1) ('rocks', 0)
+ ('desert', 0) ('desert', 0) ('desert', 0) ('desert', 0) ('desert', 1)]
+Image 24, Score: 50, Tiles: [('water', 1) ('water', 0) ('water', 0) ('water', 0) ('water', 0)
+ ('forest', 0) ('rocks', 0) ('planes', 0) ('forest', 0) ('water', 1)
+ ('cave', 2) ('rocks', 0) ('rocks', 0) ('forest', 0) ('water', 1)
+ ('cave', 1) ('cave', 0) ('planes', 0) ('planes', 2) ('water', 1)
+ ('desert', 0) ('desert', 1) ('desert', 0) ('desert', 0) ('desert', 0)]
+Image 25, Score: 44, Tiles: [('desert', 0) ('water', 0) ('water', 1) ('water', 1) ('desert', 0)
+ ('desert', 0) ('forest', 0) ('forest', 0) ('water', 0) ('desert', 1)
+ ('water', 0) ('forest', 1) ('planes', 0) ('water', 0) ('desert', 0)
+ ('water', 1) ('forest', 0) ('rocks', 0) ('cave', 2) ('desert', 0)
+ ('planes', 0) ('forest', 1) ('cave', 2) ('cave', 0) ('desert', 1)]
+Image 26, Score: 48, Tiles: [('forest', 0) ('forest', 0) ('forest', 0) ('forest', 0) ('water', 0)
+ ('forest', 1) ('desert', 0) ('forest', 0) ('forest', 0) ('water', 0)
+ ('cave', 1) ('desert', 0) ('rocks', 0) ('forest', 0) ('water', 1)
+ ('desert', 0) ('desert', 0) ('forest', 1) ('forest', 0) ('water', 1)
+ ('water', 1) ('water', 0) ('water', 0) ('water', 0) ('water', 0)]
+Image 27, Score: 59, Tiles: [('planes', 0) ('planes', 0) ('desert', 0) ('desert', 0) ('desert', 0)
+ ('water', 0) ('planes', 1) ('planes', 2) ('desert', 0) ('forest', 0)
+ ('water', 0) ('planes', 1) ('rocks', 0) ('desert', 0) ('forest', 1)
+ ('planes', 1) ('planes', 0) ('desert', 0) ('desert', 1) ('forest', 0)
+ ('desert', 0) ('planes', 0) ('forest', 1) ('forest', 0) ('forest', 0)]
+Image 28, Score: 57, Tiles: [('cave', 2) ('cave', 3) ('desert', 0) ('desert', 1) ('rocks', 0)
+ ('rocks', 0) ('rocks', 2) ('planes', 0) ('planes', 0) ('forest', 0)
+ ('rocks', 0) ('rocks', 0) ('rocks', 0) ('planes', 0) ('some_shit', 0)
+ ('rocks', 2) ('rocks', 1) ('rocks', 0) ('planes', 0) ('planes', 0)
+ ('desert', 0) ('desert', 0) ('desert', 0) ('desert', 0) ('desert', 1)]
+Image 29, Score: 34, Tiles: [('desert', 0) ('desert', 0) ('desert', 0) ('desert', 0) ('desert', 1)
+ ('water', 1) ('water', 0) ('water', 0) ('cave', 2) ('cave', 0)
+ ('water', 1) ('forest', 0) ('forest', 0) ('rocks', 0) ('cave', 2)
+ ('water', 0) ('forest', 0) ('forest', 1) ('forest', 0) ('planes', 1)
+ ('desert', 0) ('desert', 0) ('water', 0) ('water', 0) ('planes', 0)]
+Image 30, Score: 48, Tiles: [('forest', 0) ('forest', 0) ('forest', 0) ('forest', 0) ('water', 0)
+ ('forest', 1) ('desert', 0) ('forest', 0) ('forest', 0) ('water', 0)
+ ('cave', 1) ('desert', 0) ('rocks', 0) ('forest', 0) ('water', 1)
+ ('desert', 0) ('desert', 0) ('forest', 1) ('forest', 0) ('water', 1)
+ ('water', 1) ('water', 0) ('water', 0) ('water', 0) ('water', 0)]
+Image 31, Score: 51, Tiles: [('planes', 0) ('planes', 0) ('desert', 0) ('desert', 0) ('desert', 0)
+ ('water', 0) ('planes', 1) ('planes', 1) ('desert', 0) ('forest', 0)
+ ('water', 0) ('planes', 1) ('cave', 0) ('desert', 0) ('forest', 1)
+ ('planes', 1) ('planes', 0) ('desert', 0) ('desert', 1) ('forest', 0)
+ ('desert', 0) ('planes', 0) ('forest', 1) ('forest', 0) ('forest', 0)]
+Image 32, Score: 49, Tiles: [('cave', 2) ('cave', 3) ('desert', 0) ('desert', 1) ('rocks', 0)
+ ('rocks', 0) ('rocks', 2) ('planes', 0) ('planes', 0) ('forest', 0)
+ ('rocks', 0) ('rocks', 0) ('rocks', 0) ('planes', 0) ('cave', 0)
+ ('rocks', 2) ('rocks', 0) ('rocks', 0) ('planes', 0) ('planes', 0)
+ ('desert', 0) ('desert', 0) ('desert', 0) ('desert', 0) ('desert', 1)]
+Image 33, Score: 21, Tiles: [('planes', 2) ('desert', 0) ('water', 1) ('water', 0) ('water', 1)
+ ('desert', 0) ('desert', 1) ('rocks', 0) ('desert', 0) ('forest', 0)
+ ('water', 1) ('desert', 0) ('rocks', 0) ('forest', 0) ('forest', 0)
+ ('water', 1) ('forest', 0) ('forest', 0) ('forest', 0) ('rocks', 0)
+ ('water', 1) ('forest', 0) ('desert', 0) ('desert', 0) ('rocks', 0)]
+Image 34, Score: 32, Tiles: [('rocks', 0) ('cave', 0) ('rocks', 0) ('planes', 0) ('planes', 0)
+ ('rocks', 2) ('desert', 0) ('desert', 0) ('planes', 0) ('planes', 1)
+ ('rocks', 0) ('cave', 2) ('desert', 0) ('desert', 0) ('desert', 0)
+ ('rocks', 2) ('planes', 0) ('desert', 0) ('forest', 1) ('desert', 1)
+ ('forest', 0) ('planes', 0) ('desert', 0) ('cave', 1) ('water', 0)]
+Image 35, Score: 46, Tiles: [('rocks', 1) ('desert', 0) ('forest', 0) ('forest', 0) ('forest', 0)
+ ('rocks', 0) ('forest', 1) ('forest', 0) ('water', 1) ('water', 0)
+ ('desert', 0) ('desert', 0) ('some_shit', 0) ('water', 0) ('water', 0)
+ ('desert', 0) ('desert', 0) ('desert', 1) ('water', 0) ('water', 0)
+ ('cave', 3) ('cave', 2) ('cave', 0) ('cave', 2) ('rocks', 0)]
+Image 36, Score: 41, Tiles: [('desert', 0) ('forest', 1) ('forest', 0) ('forest', 0) ('rocks', 1)
+ ('desert', 1) ('desert', 0) ('forest', 0) ('rocks', 0) ('planes', 0)
+ ('planes', 0) ('desert', 1) ('forest', 0) ('forest', 1) ('planes', 0)
+ ('water', 0) ('cave', 1) ('forest', 1) ('planes', 0) ('planes', 0)
+ ('water', 0) ('desert', 0) ('water', 0) ('planes', 2) ('water', 0)]
+Image 37, Score: 24, Tiles: [('planes', 2) ('desert', 0) ('water', 1) ('water', 0) ('water', 1)
+ ('desert', 0) ('desert', 1) ('rocks', 0) ('desert', 0) ('forest', 0)
+ ('water', 2) ('desert', 0) ('cave', 0) ('forest', 0) ('forest', 0)
+ ('water', 1) ('forest', 0) ('forest', 0) ('forest', 0) ('rocks', 0)
+ ('water', 1) ('forest', 0) ('desert', 0) ('desert', 0) ('table', 0)]
+Image 38, Score: 23, Tiles: [('rocks', 0) ('cave', 0) ('cave', 0) ('planes', 0) ('planes', 0)
+ ('rocks', 0) ('desert', 0) ('desert', 0) ('planes', 0) ('planes', 1)
+ ('rocks', 0) ('cave', 1) ('desert', 0) ('desert', 0) ('desert', 0)
+ ('rocks', 2) ('planes', 0) ('desert', 0) ('forest', 1) ('desert', 1)
+ ('forest', 0) ('planes', 0) ('desert', 0) ('cave', 1) ('water', 0)]
+Image 39, Score: 46, Tiles: [('rocks', 1) ('desert', 0) ('forest', 0) ('forest', 0) ('forest', 0)
+ ('rocks', 0) ('forest', 1) ('forest', 0) ('water', 1) ('water', 0)
+ ('desert', 0) ('desert', 0) ('cave', 0) ('water', 0) ('water', 0)
+ ('desert', 0) ('desert', 0) ('desert', 1) ('water', 0) ('water', 0)
+ ('cave', 3) ('cave', 2) ('cave', 0) ('cave', 2) ('rocks', 0)]
+Image 40, Score: 55, Tiles: [('desert', 0) ('forest', 1) ('forest', 0) ('forest', 0) ('rocks', 1)
+ ('desert', 1) ('desert', 0) ('forest', 0) ('cave', 0) ('planes', 0)
+ ('planes', 0) ('desert', 1) ('forest', 0) ('forest', 1) ('planes', 0)
+ ('water', 0) ('cave', 1) ('forest', 1) ('forest', 0) ('planes', 0)
+ ('water', 0) ('rocks', 0) ('water', 0) ('forest', 2) ('water', 0)]
+Image 41, Score: 33, Tiles: [('desert', 0) ('rocks', 0) ('desert', 1) ('forest', 0) ('water', 1)
+ ('planes', 2) ('planes', 0) ('desert', 0) ('desert', 0) ('water', 0)
+ ('forest', 0) ('water', 1) ('water', 0) ('water', 0) ('water', 0)
+ ('cave', 2) ('rocks', 0) ('desert', 0) ('forest', 1) ('water', 0)
+ ('cave', 3) ('desert', 0) ('desert', 0) ('forest', 0) ('rocks', 0)]
+Image 42, Score: 43, Tiles: [('desert', 1) ('water', 0) ('water', 0) ('forest', 0) ('forest', 0)
+ ('desert', 0) ('desert', 0) ('forest', 1) ('forest', 0) ('forest', 0)
+ ('desert', 0) ('water', 1) ('forest', 0) ('forest', 0) ('rocks', 0)
+ ('desert', 0) ('water', 1) ('water', 0) ('forest', 1) ('cave', 2)
+ ('desert', 0) ('desert', 0) ('desert', 0) ('forest', 1) ('some_shit', 0)]
+Image 43, Score: 36, Tiles: [('forest', 1) ('forest', 0) ('forest', 0) ('desert', 1) ('desert', 1)
+ ('planes', 0) ('planes', 0) ('planes', 0) ('desert', 1) ('cave', 0)
+ ('water', 0) ('planes', 0) ('rocks', 0) ('desert', 0) ('cave', 1)
+ ('rocks', 2) ('planes', 0) ('planes', 1) ('desert', 0) ('planes', 0)
+ ('water', 0) ('forest', 2) ('forest', 0) ('forest', 0) ('forest', 0)]
+Image 44, Score: 33, Tiles: [('desert', 0) ('rocks', 0) ('desert', 1) ('forest', 0) ('water', 1)
+ ('planes', 2) ('planes', 0) ('desert', 0) ('desert', 0) ('water', 0)
+ ('forest', 0) ('water', 1) ('water', 0) ('water', 0) ('water', 0)
+ ('cave', 2) ('rocks', 0) ('desert', 0) ('forest', 1) ('water', 0)
+ ('cave', 3) ('desert', 0) ('desert', 0) ('forest', 0) ('rocks', 0)]
+Image 45, Score: 30, Tiles: [('forest', 0) ('desert', 0) ('cave', 1) ('desert', 0) ('planes', 0)
+ ('forest', 0) ('desert', 0) ('rocks', 0) ('rocks', 2) ('rocks', 1)
+ ('some_shit', 0) ('desert', 0) ('cave', 2) ('rocks', 0) ('rocks', 0)
+ ('forest', 0) ('desert', 0) ('desert', 0) ('water', 1) ('water', 0)
+ ('forest', 0) ('forest', 1) ('forest', 0) ('water', 1) ('water', 0)]
+Image 46, Score: 40, Tiles: [('desert', 1) ('water', 0) ('water', 0) ('forest', 0) ('forest', 0)
+ ('desert', 0) ('desert', 0) ('forest', 1) ('forest', 0) ('forest', 0)
+ ('desert', 0) ('water', 1) ('some_shit', 0) ('forest', 0) ('rocks', 0)
+ ('desert', 0) ('water', 1) ('water', 0) ('forest', 1) ('cave', 2)
+ ('desert', 0) ('desert', 0) ('desert', 0) ('forest', 1) ('some_shit', 0)]
+Image 47, Score: 60, Tiles: [('forest', 1) ('forest', 0) ('forest', 0) ('desert', 1) ('desert', 1)
+ ('planes', 0) ('planes', 0) ('planes', 0) ('desert', 1) ('cave', 0)
+ ('water', 0) ('planes', 1) ('cave', 0) ('rocks', 0) ('cave', 1)
+ ('rocks', 2) ('planes', 0) ('planes', 1) ('desert', 0) ('planes', 0)
+ ('water', 0) ('planes', 2) ('planes', 0) ('planes', 0) ('planes', 0)]
+Image 48, Score: 36, Tiles: [('water', 0) ('rocks', 2) ('desert', 0) ('forest', 0) ('forest', 0)
+ ('desert', 1) ('desert', 0) ('desert', 0) ('desert', 0) ('forest', 1)
+ ('desert', 1) ('desert', 0) ('rocks', 0) ('desert', 0) ('forest', 1)
+ ('rocks', 0) ('cave', 1) ('cave', 2) ('desert', 0) ('desert', 0)
+ ('rocks', 0) ('rocks', 0) ('rocks', 0) ('rocks', 0) ('rocks', 0)]
+Image 49, Score: 28, Tiles: [('desert', 0) ('water', 0) ('water', 2) ('forest', 0) ('forest', 0)
+ ('desert', 0) ('forest', 0) ('cave', 3) ('desert', 0) ('water', 0)
+ ('rocks', 1) ('planes', 0) ('some_shit', 0) ('water', 0) ('water', 0)
+ ('planes', 2) ('planes', 0) ('forest', 0) ('water', 1) ('water', 1)
+ ('desert', 0) ('desert', 0) ('forest', 1) ('forest', 0) ('forest', 0)]
+Image 50, Score: 34, Tiles: [('forest', 0) ('forest', 0) ('forest', 1) ('desert', 0) ('planes', 0)
+ ('forest', 0) ('forest', 1) ('forest', 0) ('desert', 1) ('planes', 0)
+ ('forest', 0) ('water', 0) ('some_shit', 0) ('desert', 0) ('planes', 0)
+ ('water', 0) ('water', 1) ('desert', 0) ('desert', 1) ('cave', 0)
+ ('water', 0) ('water', 0) ('water', 0) ('rocks', 0) ('cave', 2)]
+Image 51, Score: 30, Tiles: [('planes', 1) ('planes', 0) ('water', 1) ('water', 1) ('desert', 0)
+ ('water', 0) ('forest', 1) ('forest', 0) ('cave', 2) ('desert', 0)
+ ('forest', 0) ('forest', 0) ('rocks', 0) ('planes', 0) ('desert', 1)
+ ('desert', 0) ('rocks', 2) ('water', 0) ('planes', 0) ('desert', 0)
+ ('forest', 1) ('forest', 0) ('forest', 2) ('forest', 0) ('rocks', 0)]
+Image 52, Score: 32, Tiles: [('water', 0) ('rocks', 2) ('desert', 0) ('forest', 0) ('forest', 0)
+ ('desert', 1) ('desert', 0) ('planes', 0) ('desert', 0) ('forest', 1)
+ ('desert', 1) ('desert', 0) ('cave', 0) ('desert', 0) ('forest', 1)
+ ('rocks', 0) ('cave', 1) ('cave', 2) ('desert', 0) ('desert', 0)
+ ('rocks', 0) ('rocks', 0) ('rocks', 0) ('rocks', 1) ('some_shit', 0)]
+Image 53, Score: 21, Tiles: [('desert', 0) ('water', 0) ('water', 1) ('forest', 0) ('some_shit', 0)
+ ('desert', 0) ('forest', 0) ('some_shit', 0) ('desert', 0) ('water', 0)
+ ('rocks', 1) ('planes', 0) ('some_shit', 0) ('water', 0) ('water', 0)
+ ('planes', 2) ('planes', 0) ('forest', 0) ('water', 1) ('water', 1)
+ ('desert', 0) ('desert', 0) ('forest', 1) ('some_shit', 0)
+ ('some_shit', 0)]
+Image 54, Score: 28, Tiles: [('forest', 0) ('forest', 0) ('some_shit', 1) ('desert', 0) ('planes', 0)
+ ('forest', 0) ('forest', 1) ('some_shit', 0) ('desert', 1) ('planes', 0)
+ ('forest', 0) ('water', 0) ('some_shit', 0) ('desert', 0) ('planes', 0)
+ ('water', 0) ('water', 1) ('desert', 0) ('desert', 1) ('cave', 0)
+ ('water', 0) ('water', 0) ('water', 0) ('rocks', 0) ('cave', 2)]
+Image 55, Score: 37, Tiles: [('planes', 1) ('planes', 0) ('water', 1) ('water', 1) ('desert', 0)
+ ('water', 0) ('forest', 1) ('forest', 0) ('cave', 2) ('desert', 0)
+ ('forest', 0) ('forest', 0) ('some_shit', 0) ('planes', 0) ('desert', 1)
+ ('desert', 0) ('rocks', 2) ('water', 0) ('planes', 0) ('desert', 0)
+ ('planes', 1) ('planes', 0) ('planes', 2) ('planes', 0) ('desert', 0)]
+Image 56, Score: 23, Tiles: [('cave', 2) ('forest', 0) ('water', 0) ('water', 0) ('water', 0)
+ ('desert', 0) ('forest', 0) ('water', 1) ('water', 0) ('water', 0)
+ ('desert', 0) ('desert', 0) ('cave', 2) ('water', 0) ('water', 1)
+ ('rocks', 0) ('rocks', 0) ('rocks', 0) ('forest', 1) ('forest', 0)
+ ('rocks', 0) ('rocks', 0) ('rocks', 0) ('desert', 0) ('cave', 1)]
+Image 57, Score: 61, Tiles: [('planes', 0) ('cave', 1) ('planes', 0) ('planes', 0) ('water', 0)
+ ('planes', 0) ('forest', 0) ('planes', 2) ('desert', 0) ('forest', 0)
+ ('planes', 0) ('planes', 0) ('planes', 0) ('desert', 1) ('rocks', 0)
+ ('planes', 0) ('rocks', 0) ('planes', 0) ('desert', 0) ('desert', 1)
+ ('planes', 0) ('rocks', 2) ('planes', 2) ('water', 0) ('water', 0)]
+Image 58, Score: 36, Tiles: [('desert', 0) ('rocks', 0) ('rocks', 1) ('desert', 0) ('rocks', 0)
+ ('cave', 1) ('cave', 2) ('desert', 0) ('desert', 0) ('forest', 1)
+ ('cave', 0) ('desert', 1) ('desert', 0) ('forest', 0) ('forest', 0)
+ ('water', 0) ('desert', 0) ('desert', 0) ('desert', 0) ('forest', 1)
+ ('planes', 1) ('planes', 1) ('desert', 0) ('forest', 0) ('forest', 0)]
+Image 59, Score: 31, Tiles: [('cave', 3) ('desert', 0) ('rocks', 0) ('desert', 0) ('water', 0)
+ ('forest', 1) ('desert', 0) ('water', 1) ('desert', 0) ('water', 1)
+ ('forest', 0) ('desert', 0) ('desert', 0) ('desert', 1) ('water', 0)
+ ('forest', 0) ('forest', 0) ('rocks', 1) ('rocks', 0) ('water', 0)
+ ('forest', 0) ('forest', 0) ('forest', 0) ('forest', 0) ('water', 1)]
+Image 60, Score: 31, Tiles: [('cave', 2) ('forest', 0) ('water', 1) ('water', 0) ('water', 0)
+ ('desert', 0) ('forest', 0) ('water', 1) ('water', 0) ('water', 0)
+ ('desert', 0) ('desert', 0) ('cave', 2) ('water', 0) ('water', 1)
+ ('rocks', 0) ('rocks', 0) ('rocks', 0) ('forest', 1) ('forest', 0)
+ ('rocks', 0) ('rocks', 0) ('cave', 0) ('desert', 0) ('cave', 1)]
