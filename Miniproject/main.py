@@ -319,7 +319,7 @@ def compare_files1():
         with open(fr"Data\differences5.txt", "w") as f:
             for line in diff_lines:
                 f.write(line + "\n")
-        print("Found", len(diff_lines), "differences. Written to 'differences2.txt'.")
+        print("Found", len(diff_lines), "differences. Written to 'differences5.txt'.")
     else:
         print("No differences found!")
 

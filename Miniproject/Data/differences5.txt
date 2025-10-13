@@ -5,8 +5,6 @@
 0328 | rocks, 12, 16, 0                    | rocks, 12, 16, 1
 0332 | rocks, 12, 20, 0                    | rocks, 12, 20, 1
 0337 | Total points for image 12 = 39      | Total points for image 12 = 45
-0338 | desert, 13, 0, 0                    | desert, 13, 0, 1
-0363 | Total points for image 13 = 37      | Total points for image 13 = 38
 0474 | planes, 18, 6, 0                    | planes, 18, 6, 1
 0483 | cave, 18, 15, 0                     | cave, 18, 15, 2
 0486 | forest, 18, 18, 0                   | forest, 18, 18, 1
@@ -27,54 +25,29 @@
 0822 | rocks, 31, 16, 0                    | rocks, 31, 16, 1
 0831 | Total points for image 31 = 49      | Total points for image 31 = 65
 0967 | rocks, 37, 5, 0                     | rocks, 37, 5, 2
-0973 | cave, 37, 11, 1                     | cave, 37, 11, 2
-0987 | Total points for image 37 = 25      | Total points for image 37 = 36
+0987 | Total points for image 37 = 26      | Total points for image 37 = 36
 1103 | planes, 42, 11, 0                   | planes, 42, 11, 1
 1117 | Total points for image 42 = 55      | Total points for image 42 = 66
 1245 | rocks, 47, 23, 0                    | rocks, 47, 23, 1
 1247 | Total points for image 47 = 36      | Total points for image 47 = 42
-1320 | planes, 50, 20, 1                   | forest, 50, 20, 1
-1325 | Total points for image 50 = 37      | Total points for image 50 = 30
-1359 | forest, 52, 7, 0                    | cave, 52, 7, 0
 1432 | water, 55, 2, 0                     | water, 55, 2, 1
 1445 | rocks, 55, 15, 0                    | rocks, 55, 15, 2
-1454 | cave, 55, 24, 1                     | forest, 55, 24, 1
-1455 | Total points for image 55 = 23      | Total points for image 55 = 44
-1470 | rocks, 56, 14, 0                    | start, 56, 14, 0
+1455 | Total points for image 55 = 26      | Total points for image 55 = 44
 1472 | rocks, 56, 16, 0                    | rocks, 56, 16, 1
-1478 | rocks, 56, 22, 2                    | planes, 56, 22, 2
-1481 | Total points for image 56 = 44      | Total points for image 56 = 64
-1486 | rocks, 57, 4, 0                     | start, 57, 4, 0
-1491 | cave, 57, 9, 1                      | forest, 57, 9, 1
-1507 | Total points for image 57 = 30      | Total points for image 57 = 36
-1508 | start, 58, 0, 3                     | cave, 58, 0, 3
+1481 | Total points for image 56 = 62      | Total points for image 56 = 64
 1549 | rocks, 59, 15, 0                    | rocks, 59, 15, 2
-1556 | rocks, 59, 22, 0                    | start, 59, 22, 0
 1559 | Total points for image 59 = 34      | Total points for image 59 = 44
-1567 | rocks, 60, 7, 2                     | planes, 60, 7, 2
 1576 | rocks, 60, 16, 0                    | rocks, 60, 16, 1
-1582 | rocks, 60, 22, 2                    | planes, 60, 22, 2
-1585 | Total points for image 60 = 24      | Total points for image 60 = 64
-1590 | cave, 61, 4, 0                      | start, 61, 4, 0
-1595 | cave, 61, 9, 1                      | forest, 61, 9, 1
-1611 | Total points for image 61 = 31      | Total points for image 61 = 36
-1612 | start, 62, 0, 3                     | cave, 62, 0, 3
-1629 | desert, 62, 17, 0                   | desert, 62, 17, 1
-1637 | Total points for image 62 = 30      | Total points for image 62 = 38
-1640 | cave, 63, 2, 1                      | forest, 63, 2, 1
-1641 | start, 63, 3, 0                     | forest, 63, 3, 1
-1663 | Total points for image 63 = 33      | Total points for image 63 = 66
-1685 | start, 64, 21, 2                    | planes, 64, 21, 2
-1689 | Total points for image 64 = 54      | Total points for image 64 = 80
+1585 | Total points for image 60 = 62      | Total points for image 60 = 64
+1641 | forest, 63, 3, 0                    | forest, 63, 3, 1
+1663 | Total points for image 63 = 52      | Total points for image 63 = 66
 1738 | water, 66, 22, 1                    | water, 66, 22, 0
 1741 | Total points for image 66 = 114     | Total points for image 66 = 99
 1783 | rocks, 68, 15, 0                    | rocks, 68, 15, 1
 1786 | rocks, 68, 18, 0                    | rocks, 68, 18, 1
-1792 | rocks, 68, 24, 0                    | start, 68, 24, 0
 1793 | Total points for image 68 = 106     | Total points for image 68 = 124
 1816 | water, 69, 22, 1                    | water, 69, 22, 0
 1819 | Total points for image 69 = 114     | Total points for image 69 = 99
 1822 | forest, 70, 2, 0                    | forest, 70, 2, 1
-1823 | cave, 70, 3, 0                      | forest, 70, 3, 1
-1830 | cave, 70, 10, 1                     | forest, 70, 10, 1
-1845 | Total points for image 70 = 15      | Total points for image 70 = 66
+1823 | forest, 70, 3, 0                    | forest, 70, 3, 1
+1845 | Total points for image 70 = 38      | Total points for image 70 = 66
