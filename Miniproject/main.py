@@ -13,6 +13,7 @@ template_red =  cv.imread(r"redtemplate.jpg",0)
 threshold = 0.7
 min_distance = 8
 
+border = 10
 
 
 def equalize_brightness(img):
@@ -38,7 +39,7 @@ def equalize_brightness(img):
     cv.destroyAllWindows()
     return result
 
-def meanBGR(img):
+def meanBGR1(img):
     h, w = img.shape[:2]
     mask = np.ones((h, w), dtype=np.uint8)
     exclude_x1 = int(w * 0.25)
@@ -55,14 +56,43 @@ def meanBGR(img):
 
     masked_img = cv.bitwise_and(img, img, mask=mask)
     mean_bgr = cv.mean(img, mask=mask)
+    # print(mean_bgr)
+    # cv.imshow("Masked Image", masked_img)
+    # cv.waitKey(0)
+    # cv.destroyAllWindows()
     return [mean_bgr[0], mean_bgr[1], mean_bgr[2], 0.0]
 
-def knn(img, training_data, imagenr, tilenr):
+def meanBGR(img):
+    h, w = img.shape[:2]
+    mask = np.ones((h, w), dtype=np.uint8)
+    h = h - border * 2
+    w = w - border * 2
+    exclude_x1 = int(w * 0.25)
+    exclude_x2 = int(w * 0.75)
+    exclude_y1 = int(h * 0.25)
+    exclude_y2 = int(h * 0.75)
+    mask[exclude_y1 + border:exclude_y2 + border, exclude_x1 + border:exclude_x2 + border] = 0
+    
+    border1 = 5 + border    
+    mask[:border1, :] = 0
+    mask[-border1:, :] = 0
+    mask[:, :border1] = 0
+    mask[:, -border1:] = 0
+
+    masked_img = cv.bitwise_and(img, img, mask=mask)
+    mean_bgr = cv.mean(img, mask=mask)
+    # print(mean_bgr)
+    # cv.imshow("Masked Image", masked_img)
+    # cv.waitKey(0)
+    # cv.destroyAllWindows()
+    return [mean_bgr[0], mean_bgr[1], mean_bgr[2], 0.0]
+
+def knn(tile_img, training_data, imagenr, tilenr):
     k = 1
-    edges = cv.Canny(img, 100, 255)
+    edges = cv.Canny(tile_img[10:-10, 10:-10], 100, 255)
     #shadows = detect_shadow_blobs(img)
     edge_mean = float(np.mean(edges))
-    mean_bgr = meanBGR(img)
+    mean_bgr = meanBGR(tile_img)
     afstande = []
     for trainingtile in training_data:
         afstand = np.sqrt((trainingtile[1][0] - mean_bgr[0])**2 + (trainingtile[1][1] - mean_bgr[1])**2 + (trainingtile[1][2] - mean_bgr[2])**2 + (trainingtile[1][3] - edge_mean)**2) # + (trainingtile[1][4]-shadows)**2
@@ -111,7 +141,7 @@ def redchannel_template_matching(img, redtemplate):
         #print("No matches found")
     #matches = matches[:3]  # Keep only the first 3 matches
     #print(f"number_of_matches={len(matches)}")
-    return matches, tile_with_rects
+    return matches, tile_with_rects, res
 
 def bluechannel_template_matching(img, bluetemplate):
     res = cv.matchTemplate(img,bluetemplate,cv.TM_CCOEFF_NORMED)
@@ -128,9 +158,9 @@ def bluechannel_template_matching(img, bluetemplate):
     matches = matches[:3]  # Keep only the first 3 matches
 
     #print(f"number_of_matches={len(matches)}")
-    return matches, tile_with_rects
+    return matches, tile_with_rects, res
 
-def split_into_tiles(img):
+def split_into_tiles1(img):
     tiles = []
     h, w = img.shape[:2] 
     tile_h, tile_w = h // 5, w // 5
@@ -140,14 +170,33 @@ def split_into_tiles(img):
             tiles.append(tile)
     return tiles
 
-def count_crowns(img, biome):
+def split_into_tiles(img):
+    tiles = []
+    h, w = img.shape[:2] 
+    #print(f"h={h}, w={w}")
+    tile_h, tile_w = h // 5, w // 5
+
+    img = cv.copyMakeBorder(img, border, border, border, border, cv.BORDER_CONSTANT, value=[0, 0, 0])
+    
+    for i in range(5):
+        for j in range(5):
+            tile = img[i*tile_h:(i+1)*tile_h+border*2, j*tile_w:(j+1)*tile_w+border*2]
+            tiles.append(tile)
+            # cv.imshow(f"Tile", tile)
+            # cv.waitKey(0)
+            # cv.destroyAllWindows()
+    return tiles
+
+
+def count_crowns(img, biome, imagenr):
     total_crowns = 0
     if biome == "water":
         red_channel_img = cv.split(img)[2]
         template = template_red
         for i in range(4):
             template = rotate_template(template, -90)
-            matches,matched_tile = redchannel_template_matching(red_channel_img, template)
+            matches,matched_tile, res = redchannel_template_matching(red_channel_img, template)
+            template_matching_diagnose(img, biome, imagenr, matches, matched_tile, res, total_crowns)
             #cv.imshow("img", matched_tile)
             #cv.waitKey(0)
             if len(matches) >= 1:
@@ -157,19 +206,26 @@ def count_crowns(img, biome):
         template = template_blue
         for i in range(4):
             template = rotate_template(template, 90)
-            matches,matched_tile = bluechannel_template_matching(blue_channel_img, template)
+            matches,matched_tile, res = bluechannel_template_matching(blue_channel_img, template)
             total_crowns += len(matches)
+            template_matching_diagnose(img, biome, imagenr, matches, matched_tile, res, total_crowns)
             #cv.imshow("img", matched_tile)
             #cv.waitKey(0)
             if len(matches) >= 1:
                    break
 
-    #print(f"matches={total_crowns}")         
-    #if(len(matches) > 0):
-        #cv.imshow("img", matched_tile)
-        #cv.waitKey(0)
-
+    #print(f"matches={total_crowns}")
+    
+    
     return len(matches), matched_tile 
+
+def template_matching_diagnose(img, biome, imagenr, matches, matched_tile, res, total_crowns):
+    if(imagenr == 18 or imagenr == 31): # len(matches) > 0
+        print(f"Image {imagenr}, Biome: {biome}, Crowns: {total_crowns}")
+        cv.imshow("img", matched_tile)
+        cv.imshow("res", res)
+        cv.waitKey(0)
+
 
 def detect_shadow_blobs(image_path):
     # Load the image
@@ -280,7 +336,7 @@ for i in range(74):
     for j in range(len(tiles)):
         tile_data[j]["type"] = knn(tiles[j], training_data, i, j)
         #print(f"Image {i+1}, Tile {j+1}, Type: {tile_data[j]['type']}")
-        tile_data[j]["crowns"] = count_crowns(tiles[j], tile_data[j]["type"])[0]
+        tile_data[j]["crowns"] = count_crowns(tiles[j], tile_data[j]["type"], i)[0]
         with open("Data/AllImages.txt", "a") as file:
             file.write(f"{tile_data[j]["type"]}, {i}, {j}, {tile_data[j]["crowns"]}\n")
     total_score = calculate_score(tile_data)
@@ -291,7 +347,6 @@ for i in range(74):
 
 
 def normalize1(line):
-    """Normalize a line by stripping spaces."""
     return [x.strip() for x in line.split(',')]
 
 def compare_files1():
@@ -316,10 +371,10 @@ def compare_files1():
 
     # Write results
     if diff_lines:
-        with open(fr"Data\differences5.txt", "w") as f:
+        with open(fr"Data\differences6.txt", "w") as f:
             for line in diff_lines:
                 f.write(line + "\n")
-        print("Found", len(diff_lines), "differences. Written to 'differences5.txt'.")
+        print("Found", len(diff_lines), "differences. Written to 'differences6.txt'.")
     else:
         print("No differences found!")
 
