@@ -196,7 +196,7 @@ def count_crowns(img, biome, imagenr):
         for i in range(4):
             template = rotate_template(template, -90)
             matches,matched_tile, res = redchannel_template_matching(red_channel_img, template)
-            template_matching_diagnose(img, biome, imagenr, matches, matched_tile, res, total_crowns)
+            #template_matching_diagnose(img, biome, imagenr, matches, matched_tile, res, total_crowns)
             #cv.imshow("img", matched_tile)
             #cv.waitKey(0)
             if len(matches) >= 1:
@@ -208,7 +208,7 @@ def count_crowns(img, biome, imagenr):
             template = rotate_template(template, 90)
             matches,matched_tile, res = bluechannel_template_matching(blue_channel_img, template)
             total_crowns += len(matches)
-            template_matching_diagnose(img, biome, imagenr, matches, matched_tile, res, total_crowns)
+            #template_matching_diagnose(img, biome, imagenr, matches, matched_tile, res, total_crowns)
             #cv.imshow("img", matched_tile)
             #cv.waitKey(0)
             if len(matches) >= 1:

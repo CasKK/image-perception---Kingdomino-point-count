@@ -6,10 +6,13 @@
 0259 | Total points for image 9 = 45       | Total points for image 9 = 38
 0332 | rocks, 12, 20, 0                    | rocks, 12, 20, 1
 0337 | Total points for image 12 = 42      | Total points for image 12 = 45
+0338 | desert, 13, 0, 0                    | desert, 13, 0, 1
 0343 | water, 13, 5, 1                     | water, 13, 5, 0
-0363 | Total points for image 13 = 45      | Total points for image 13 = 38
+0363 | Total points for image 13 = 44      | Total points for image 13 = 38
 0463 | water, 17, 21, 1                    | water, 17, 21, 0
 0467 | Total points for image 17 = 62      | Total points for image 17 = 60
+0567 | water, 21, 21, 1                    | water, 21, 21, 0
+0571 | Total points for image 21 = 62      | Total points for image 21 = 60
 0604 | rocks, 23, 6, 0                     | rocks, 23, 6, 1
 0623 | Total points for image 23 = 50      | Total points for image 23 = 52
 0714 | rocks, 27, 12, 0                    | rocks, 27, 12, 1
@@ -20,7 +23,10 @@
 0822 | rocks, 31, 16, 0                    | rocks, 31, 16, 1
 0831 | Total points for image 31 = 49      | Total points for image 31 = 65
 0967 | rocks, 37, 5, 0                     | rocks, 37, 5, 2
-0987 | Total points for image 37 = 26      | Total points for image 37 = 36
+0973 | cave, 37, 11, 1                     | cave, 37, 11, 2
+0987 | Total points for image 37 = 25      | Total points for image 37 = 36
+1083 | water, 41, 17, 1                    | water, 41, 17, 0
+1091 | Total points for image 41 = 46      | Total points for image 41 = 43
 1187 | water, 45, 17, 1                    | water, 45, 17, 0
 1195 | Total points for image 45 = 46      | Total points for image 45 = 43
 1245 | rocks, 47, 23, 0                    | rocks, 47, 23, 1
@@ -29,6 +35,8 @@
 1481 | Total points for image 56 = 62      | Total points for image 56 = 64
 1576 | rocks, 60, 16, 0                    | rocks, 60, 16, 1
 1585 | Total points for image 60 = 62      | Total points for image 60 = 64
+1629 | desert, 62, 17, 0                   | desert, 62, 17, 1
+1637 | Total points for image 62 = 30      | Total points for image 62 = 38
 1738 | water, 66, 22, 1                    | water, 66, 22, 0
 1741 | Total points for image 66 = 114     | Total points for image 66 = 99
 1816 | water, 69, 22, 1                    | water, 69, 22, 0
