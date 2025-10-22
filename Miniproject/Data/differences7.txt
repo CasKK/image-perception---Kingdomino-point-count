@@ -1,5 +1,12 @@
 idx  | new                                 | old
-0787 | planes, 30, 7, 1                    | planes, 30, 7, 2
+0787 | planes,  30,  7,  1                 | planes,  30,  7,  2
 0805 | Total points for image 30 = 59      | Total points for image 30 = 67
-1472 | rocks, 56, 16, 0                    | rocks, 56, 16, 1
+1472 | rocks,  56,  16,  0                 | rocks,  56,  16,  1
 1481 | Total points for image 56 = 62      | Total points for image 56 = 64
+[331   0   0   0   0   0   0]
+[  0 250   0   0   0   0   0]
+[  0   0 407   0   0   0   0]
+[  0   0   0 470   0   0   0]
+[  0   0   0   0 181   0   0]
+[  0   0   0   0   0 109   0]
+[  0   0   0   0   0   0  74]

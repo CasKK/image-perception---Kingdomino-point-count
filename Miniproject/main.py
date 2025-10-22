@@ -329,27 +329,37 @@ for i in range(74):
 
 
 
-def normalize1(line):
-    return [x.strip() for x in line.split(',')]
-
 def compare_files1():
     with open("Data/CorrectTileCrownPoint.txt", "r") as f:
-        old_data = [normalize1(line) for line in f if line.strip()]
+        old_data = [line.strip().split(',') for line in f]
         
     with open("Data/AllImages.txt", "r") as f:
-        new_data = [normalize1(line) for line in f if line.strip()]
+        new_data = [line.strip().split(',') for line in f]
 
-    # Ensure same length
-    max_len = max(len(new_data), len(old_data))
-    old_data.extend([[""]] * (max_len - len(old_data)))
-    new_data.extend([[""]] * (max_len - len(new_data)))
+    # # Ensure same length
+    # max_len = max(len(new_data), len(old_data))
+    # old_data.extend([[""]] * (max_len - len(old_data)))
+    # new_data.extend([[""]] * (max_len - len(new_data)))
 
-    # Compare and format output
+    tile_types = ["water", "planes", "forest", "desert", "rocks", "cave", "start"]
+    type_to_index = {type: i for i, type in enumerate(tile_types)}
+    confusionMatrix = np.zeros((7, 7), dtype=int)
+    # confusionMatrix = [[0,0,0,0,0,0,0]*7]
+
     a = "idx"
     b = "new"
     c = "old"
     diff_lines = [f"{a:<4} | {b:<35} | {c}"]
     for idx, (new_line, old_line) in enumerate(zip(new_data, old_data)):
+
+        new_label = new_line[0]
+        old_label = old_line[0]
+        if new_label in type_to_index and old_label in type_to_index:
+            i = type_to_index[old_label]
+            j = type_to_index[new_label]
+            confusionMatrix[i, j] += 1
+
+
         if new_line != old_line:
             new_str = ", ".join(new_line)
             old_str = ", ".join(old_line)
@@ -360,7 +370,9 @@ def compare_files1():
         with open(fr"Data\differences7.txt", "w") as f:
             for line in diff_lines:
                 f.write(line + "\n")
-        print("Found", len(diff_lines), "differences. Written to 'differences7.txt'.")
+            for i in confusionMatrix:
+                f.write(f"{i}\n")
+        print("Found", len(diff_lines)-1, "differences. Written to 'differences7.txt'.")
     else:
         print("No differences found!")
 
