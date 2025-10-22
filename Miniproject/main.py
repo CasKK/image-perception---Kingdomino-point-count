@@ -81,7 +81,7 @@ def meanBGR(img):
 
     masked_img = cv.bitwise_and(img, img, mask=mask)
     mean_bgr = cv.mean(img, mask=mask)
-    print(mean_bgr)
+    #print(mean_bgr)
     # cv.imshow("Masked Image", masked_img)
     # cv.waitKey(0)
     # cv.destroyAllWindows()
@@ -179,7 +179,7 @@ def count_crowns(img, biome, imagenr):
         for i in range(4):
             template = rotate_template(template, 90)
             matches,matched_tile, res = template_matching(red_channel_img, template, threshold)
-            template_matching_diagnose(img, biome, imagenr, matches, matched_tile, res, total_crowns)
+            #template_matching_diagnose(img, biome, imagenr, matches, matched_tile, res, total_crowns)
             if len(matches) >= 1:
                    break
     else:
@@ -197,7 +197,7 @@ def count_crowns(img, biome, imagenr):
             template = rotate_template(template, 90)
             matches,matched_tile, res = template_matching(blue_channel_img, template, threshold)
             total_crowns += len(matches)
-            template_matching_diagnose(img, biome, imagenr, matches, matched_tile, res, total_crowns)
+            #template_matching_diagnose(img, biome, imagenr, matches, matched_tile, res, total_crowns)
             if len(matches) >= 1:
                    break
     #print(f"matches={total_crowns}")
