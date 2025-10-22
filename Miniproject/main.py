@@ -204,7 +204,7 @@ def count_crowns(img, biome, imagenr):
     return len(matches), matched_tile 
 
 def template_matching_diagnose(img, biome, imagenr, matches, matched_tile, res, total_crowns):
-    if(imagenr == 12 or imagenr == 31): # len(matches) > 0
+    if(imagenr == 0 or imagenr == 31): # len(matches) > 0
         print(f"Image {imagenr}, Biome: {biome}, Crowns: {total_crowns}")
         cv.imshow("img", matched_tile)
         cv.imshow("res", res)
@@ -345,7 +345,10 @@ def compare_files1():
     new_data.extend([[""]] * (max_len - len(new_data)))
 
     # Compare and format output
-    diff_lines = []
+    a = "idx"
+    b = "new"
+    c = "old"
+    diff_lines = [f"{a:<4} | {b:<35} | {c}"]
     for idx, (new_line, old_line) in enumerate(zip(new_data, old_data)):
         if new_line != old_line:
             new_str = ", ".join(new_line)
@@ -354,10 +357,10 @@ def compare_files1():
 
     # Write results
     if diff_lines:
-        with open(fr"Data\differences6.txt", "w") as f:
+        with open(fr"Data\differences7.txt", "w") as f:
             for line in diff_lines:
                 f.write(line + "\n")
-        print("Found", len(diff_lines), "differences. Written to 'differences6.txt'.")
+        print("Found", len(diff_lines), "differences. Written to 'differences7.txt'.")
     else:
         print("No differences found!")
 
