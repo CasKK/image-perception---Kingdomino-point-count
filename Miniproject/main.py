@@ -4,6 +4,8 @@ from collections import deque
 import time
 from multiprocessing import Pool, cpu_count
 import ast #Til at hive data ind fra fil
+import matplotlib.pyplot as plt
+from sklearn import metrics
 
 
 
@@ -88,7 +90,7 @@ def meanBGR(img):
     return [mean_bgr[0], mean_bgr[1], mean_bgr[2], 0.0]
 
 def knn(tile_img, training_data, imagenr, tilenr):
-    k = 1
+    k = 5
     edges = cv.Canny(tile_img[10:-10, 10:-10], 100, 255)
     #shadows = detect_shadow_blobs(img)
     edge_mean = float(np.mean(edges))
@@ -293,8 +295,8 @@ time_start = time.time()
 training_data = []
 with open(fr"Data/TrainingDataAllTiles_Type_Img_BGR_Canny_Shadow.txt") as f:
     for i, line in enumerate(f):
-        #if i >= 1175:
-        #    break
+        if i >= 25*60:
+            break
         line = line.strip()
         if line:
             tile_type, _, _, values = ast.literal_eval(line)
@@ -311,7 +313,7 @@ for i in range(74):
 with open("Data/AllImages.txt", "w") as f:
     f.write("")
 
-for i in range(74):
+for i in range(60, 74):
     dt = np.dtype([("type", "U10"), ("crowns", int)])
     tile_data = np.zeros(25, dtype=dt)
     img_temp = equalize_brightness(Image_array[i])
@@ -328,23 +330,27 @@ for i in range(74):
     #print(f"Total score for image {i+1}: {total_score}")
 
 
+time_end = time.time()  # end timer
+print(f"Runtime: {time_end - time_start:.4f} seconds")
+
 
 def compare_files1():
-    with open("Data/CorrectTileCrownPoint.txt", "r") as f:
+    with open("Data/CorrectTileCrownPointCopy.txt", "r") as f:
         old_data = [line.strip().split(',') for line in f]
         
     with open("Data/AllImages.txt", "r") as f:
         new_data = [line.strip().split(',') for line in f]
 
-    # # Ensure same length
-    # max_len = max(len(new_data), len(old_data))
-    # old_data.extend([[""]] * (max_len - len(old_data)))
-    # new_data.extend([[""]] * (max_len - len(new_data)))
+    # Ensure same length
+    max_len = max(len(new_data), len(old_data))
+    old_data.extend([[""]] * (max_len - len(old_data)))
+    new_data.extend([[""]] * (max_len - len(new_data)))
 
     tile_types = ["water", "planes", "forest", "desert", "rocks", "cave", "start"]
     type_to_index = {type: i for i, type in enumerate(tile_types)}
     confusionMatrix = np.zeros((7, 7), dtype=int)
-    # confusionMatrix = [[0,0,0,0,0,0,0]*7]
+    actualConfusionMatrix = np.zeros((7, 7), dtype=int)
+    confusionMatrixNormal = np.zeros((7, 7), dtype=float)
 
     a = "idx"
     b = "new"
@@ -352,13 +358,17 @@ def compare_files1():
     diff_lines = [f"{a:<4} | {b:<35} | {c}"]
     for idx, (new_line, old_line) in enumerate(zip(new_data, old_data)):
 
-        new_label = new_line[0]
-        old_label = old_line[0]
-        if new_label in type_to_index and old_label in type_to_index:
-            i = type_to_index[old_label]
-            j = type_to_index[new_label]
+        new_type = new_line[0]
+        old_type = old_line[0]
+        if new_type in type_to_index and old_type in type_to_index:
+            i = type_to_index[old_type]
+            j = type_to_index[new_type]
             confusionMatrix[i, j] += 1
-
+        
+        
+        if old_type in type_to_index:
+            i = type_to_index[old_type]
+            actualConfusionMatrix[i, i] += 1
 
         if new_line != old_line:
             new_str = ", ".join(new_line)
@@ -375,6 +385,16 @@ def compare_files1():
         print("Found", len(diff_lines)-1, "differences. Written to 'differences7.txt'.")
     else:
         print("No differences found!")
+    
+    for i in range(len(confusionMatrix)):
+        for j in range(len(confusionMatrix[i])):
+            if actualConfusionMatrix[i][i] != 0:
+                confusionMatrixNormal[i][j] = confusionMatrix[i][j] / actualConfusionMatrix[i][i]
+    
+    cm_display = metrics.ConfusionMatrixDisplay(confusion_matrix=confusionMatrix, display_labels=tile_types)
+    cm_display.plot(cmap="Blues", values_format=".2f")
+    plt.title("Biome Classification Confusion Matrix")
+    plt.show()
 
 compare_files1()
 
@@ -390,8 +410,6 @@ compare_files1()
 
 
 
-time_end = time.time()  # end timer
-print(f"Runtime: {time_end - time_start:.4f} seconds")
 
 
 
@@ -401,4 +419,5 @@ print(f"Runtime: {time_end - time_start:.4f} seconds")
 
 
 
+#confusionMatrix = metrics.confusion_matrix(actualConfusionMatrix, confusionMatrix, normalize='true')
 

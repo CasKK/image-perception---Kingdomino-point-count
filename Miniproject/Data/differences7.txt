@@ -1,12 +1,22 @@
 idx  | new                                 | old
-0787 | planes,  30,  7,  1                 | planes,  30,  7,  2
-0805 | Total points for image 30 = 59      | Total points for image 30 = 67
-1472 | rocks,  56,  16,  0                 | rocks,  56,  16,  1
-1481 | Total points for image 56 = 62      | Total points for image 56 = 64
-[331   0   0   0   0   0   0]
-[  0 250   0   0   0   0   0]
-[  0   0 407   0   0   0   0]
-[  0   0   0 470   0   0   0]
-[  0   0   0   0 181   0   0]
-[  0   0   0   0   0 109   0]
-[  0   0   0   0   0   0  74]
+0014 | rocks,  60,  14,  0                 | start,  60,  14,  0
+0022 | rocks,  60,  22,  2                 | planes,  60,  22,  2
+0025 | Total points for image 60 = 47      | Total points for image 60 = 64
+0030 | cave,  61,  4,  0                   | start,  61,  4,  0
+0080 | cave,  63,  2,  1                   | forest,  63,  2,  1
+0103 | Total points for image 63 = 35      | Total points for image 63 = 66
+0125 | rocks,  64,  21,  2                 | planes,  64,  21,  2
+0129 | Total points for image 64 = 54      | Total points for image 64 = 80
+0206 | rocks,  67,  24,  0                 | start,  67,  24,  0
+0232 | rocks,  68,  24,  0                 | start,  68,  24,  0
+0284 | rocks,  70,  24,  0                 | start,  70,  24,  0
+0295 | table,  71,  9,  0                  | desert,  71,  9,  0
+0311 | Total points for image 71 = 79      | Total points for image 71 = 80
+0336 | rocks,  72,  24,  0                 | start,  72,  24,  0
+[61  0  0  0  0  0  0]
+[ 0 42  0  0  2  0  0]
+[ 0  0 80  0  0  1  0]
+[ 0  0  0 93  0  0  0]
+[ 0  0  0  0 34  0  0]
+[ 0  0  0  0  0 22  0]
+[0 0 0 0 5 1 8]

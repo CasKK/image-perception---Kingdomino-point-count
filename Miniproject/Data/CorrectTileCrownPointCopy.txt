@@ -12,7 +12,7 @@ planes, 60, 10, 0
 planes, 60, 11, 0
 planes, 60, 12, 0
 desert, 60, 13, 1
-rocks, 60, 14, 0
+start, 60, 14, 0
 planes, 60, 15, 0
 rocks, 60, 16, 1
 planes, 60, 17, 0
@@ -20,15 +20,15 @@ desert, 60, 18, 0
 desert, 60, 19, 1
 planes, 60, 20, 0
 rocks, 60, 21, 2
-rocks, 60, 22, 2
+planes, 60, 22, 2
 water, 60, 23, 0
 water, 60, 24, 0
-Total points for image 60 = 47
+Total points for image 60 = 64
 desert, 61, 0, 0
 rocks, 61, 1, 0
 rocks, 61, 2, 1
 desert, 61, 3, 0
-cave, 61, 4, 0
+start, 61, 4, 0
 cave, 61, 5, 1
 cave, 61, 6, 2
 desert, 61, 7, 0
@@ -78,7 +78,7 @@ water, 62, 24, 1
 Total points for image 62 = 38
 forest, 63, 0, 0
 forest, 63, 1, 1
-cave, 63, 2, 1
+forest, 63, 2, 1
 forest, 63, 3, 1
 forest, 63, 4, 0
 forest, 63, 5, 0
@@ -101,7 +101,7 @@ forest, 63, 21, 0
 forest, 63, 22, 0
 forest, 63, 23, 0
 start, 63, 24, 0
-Total points for image 63 = 35
+Total points for image 63 = 66
 planes, 64, 0, 0
 planes, 64, 1, 0
 water, 64, 2, 0
@@ -123,11 +123,11 @@ planes, 64, 17, 1
 desert, 64, 18, 0
 desert, 64, 19, 0
 water, 64, 20, 0
-rocks, 64, 21, 2
+planes, 64, 21, 2
 planes, 64, 22, 0
 planes, 64, 23, 0
 planes, 64, 24, 0
-Total points for image 64 = 54
+Total points for image 64 = 80
 desert, 65, 0, 1
 desert, 65, 1, 0
 desert, 65, 2, 0
@@ -204,7 +204,7 @@ forest, 67, 20, 0
 forest, 67, 21, 0
 forest, 67, 22, 0
 forest, 67, 23, 0
-rocks, 67, 24, 0
+start, 67, 24, 0
 Total points for image 67 = 66
 desert, 68, 0, 1
 desert, 68, 1, 0
@@ -230,7 +230,7 @@ rocks, 68, 20, 0
 rocks, 68, 21, 0
 rocks, 68, 22, 2
 planes, 68, 23, 0
-rocks, 68, 24, 0
+start, 68, 24, 0
 Total points for image 68 = 124
 water, 69, 0, 0
 water, 69, 1, 0
@@ -282,7 +282,7 @@ forest, 70, 20, 0
 forest, 70, 21, 0
 forest, 70, 22, 0
 forest, 70, 23, 0
-rocks, 70, 24, 0
+start, 70, 24, 0
 Total points for image 70 = 66
 planes, 71, 0, 0
 planes, 71, 1, 0
@@ -293,7 +293,7 @@ forest, 71, 5, 1
 planes, 71, 6, 0
 planes, 71, 7, 0
 desert, 71, 8, 1
-table, 71, 9, 0
+desert, 71, 9, 0
 forest, 71, 10, 0
 planes, 71, 11, 0
 planes, 71, 12, 2
@@ -309,7 +309,7 @@ planes, 71, 21, 2
 planes, 71, 22, 0
 planes, 71, 23, 0
 planes, 71, 24, 0
-Total points for image 71 = 79
+Total points for image 71 = 80
 desert, 72, 0, 1
 desert, 72, 1, 0
 desert, 72, 2, 0
@@ -334,7 +334,7 @@ rocks, 72, 20, 0
 rocks, 72, 21, 0
 rocks, 72, 22, 2
 planes, 72, 23, 0
-rocks, 72, 24, 0
+start, 72, 24, 0
 Total points for image 72 = 124
 water, 73, 0, 0
 water, 73, 1, 0
