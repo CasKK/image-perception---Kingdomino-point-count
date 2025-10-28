@@ -391,7 +391,7 @@ def compare_files1():
             if actualConfusionMatrix[i][i] != 0:
                 confusionMatrixNormal[i][j] = confusionMatrix[i][j] / actualConfusionMatrix[i][i]
     
-    cm_display = metrics.ConfusionMatrixDisplay(confusion_matrix=confusionMatrix, display_labels=tile_types)
+    cm_display = metrics.ConfusionMatrixDisplay(confusion_matrix=confusionMatrixNormal, display_labels=tile_types)
     cm_display.plot(cmap="Blues", values_format=".2f")
     plt.title("Biome Classification Confusion Matrix")
     plt.show()
